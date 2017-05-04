@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Form</title>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <form method="POST" action="https://formspree.io/vmartynova99@gmail.com">
+        <fieldset>
+            <label>Name: 
+                <input type="text" name="person-name" required>
+            </label>
+            <br>
+            <label> Birthday
+                <input type="text" name="Day" style="width:3%" placeholder="DD" required >
+            </label>
+            <select name="Month" required >
+                  <option value="">January</option>
+                  <option value="february">February</option>
+                  <option value="march">March</option>
+                  <option value="april">April</option>
+                  <option value="may">May</option>
+                  <option value="june">June</option>
+                  <option value="july">July</option>
+                  <option value="august">August</option>
+                  <option value="september">September</option>
+                  <option value="october">October</option>
+                  <option value="november">November</option>
+                  <option value="december">December</option>
+            </select>
+            <input type="text" name="Year" style="width:6%" placeholder="YY" required >
+            <br>
+            <label>E-mail
+            <input type="email" name="person-email" required >
+            </label>  
+        </fieldset>
+        <fieldset>
+            Your gender:
+            <br>
+            <label>
+                <input type="radio" name="gender" value="male" checked> Male
+                <br>
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+        </fieldset>
+        <fieldset>
+            <label> Mobile phone
+            <input type="text" name="person-phone" pattern="[+]{1}[0-9]{12}" placeholder="+380123456789">
+            </label>
+        </fieldset>
+        Civil status
+        <br>
+        <label>
+            <input type="radio" name="status" value=" married">Married
+        </label>
+           <br>  
+       <label>    
+            <input type="radio" name="status" value="single ">Single
+            <br>
+        </label> 
+        <label>
+            <input type="radio" name="status" value="divorced">Divorced 
+            <br>
+        </label>
+        <label>
+            <input type="radio" name="status" value="widowed">Widowed
+            <br>
+        </label>
+        <fieldset>
+        <h2>Life position</h2>
+        The main thing in life is:
+            <select>
+                <option value="">None</option>
+                <option value="family">Family and Children</option>
+                <option value="career">Career and money</option>
+                <option value="resty">Entertainment and recreation</option>
+                <option value="self">Self-development</option>
+            </select>
+            <br>
+            Attitude to smoking:
+            <select>
+                <option value="-+">Neutral</option>
+                <option value="-">Negative</option>
+                <option value="+">Positive</option>
+            </select>
+            <br>
+            Attitude to alcohol:
+             <select>
+                <option value="-+">Neutral</option>
+                <option value="-">Negative</option>
+                <option value="+">Positive</option>
+            </select>     
+        </fieldset>
+        
+        <fieldset>
+           <h2>Music<h2></h2>
+           <p>You like</p>
+           <p><input type="checkbox" name="music" value="rok"> Rok</p>
+           <p><input type="checkbox" name="music" value="pop" > Pop</p>
+           <p><input type="checkbox" name="music" value="jazz" > Jazz</p>
+           <p><input type="checkbox" name="music" value="classical"> Classical</p>
+           <p><input type="checkbox" name="music" value="hip-hop"> Hip-Hop</p>
+           <p><input type="checkbox" name="music" value="alternative"> Alternative</p>
+           <p><input type="checkbox" name="music" value="folk"> Folk</p>
+       </fieldset>
+       <br>
+        <h2>Select your favorite color:</h2>
+        <input type="color" name="favcolor">
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
