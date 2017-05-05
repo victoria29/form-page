@@ -14,26 +14,11 @@
                 <input type="text" name="person-name" required>
             </label>
             <br>
-            <label> Birthday
-                <input type="text" name="Day" style="width:3%" placeholder="DD" required >
+            <label> Birthday:
+                <input type="date" name="Birthday" style="width:10%"  required >
             </label>
-            <select name="Month" required >
-                  <option value="">January</option>
-                  <option value="february">February</option>
-                  <option value="march">March</option>
-                  <option value="april">April</option>
-                  <option value="may">May</option>
-                  <option value="june">June</option>
-                  <option value="july">July</option>
-                  <option value="august">August</option>
-                  <option value="september">September</option>
-                  <option value="october">October</option>
-                  <option value="november">November</option>
-                  <option value="december">December</option>
-            </select>
-            <input type="text" name="Year" style="width:6%" placeholder="YYYY" required pattern="[1-9]{4}">
             <br>
-            <label>E-mail
+            <label>E-mail:
             <input type="email" name="person-email" required >
             </label>  
         </fieldset>
@@ -56,19 +41,19 @@
         Civil status
         <br>
         <label>
-            <input type="radio" name="status" value=" married">Married
+            <input type="radio" name="Civil status" value=" married">Married
         </label>
            <br>  
        <label>    
-            <input type="radio" name="status" value="single ">Single
+            <input type="radio" name="Civil status" value="single ">Single
             <br>
         </label> 
         <label>
-            <input type="radio" name="status" value="divorced">Divorced 
+            <input type="radio" name="Civil status" value="divorced">Divorced 
             <br>
         </label>
         <label>
-            <input type="radio" name="status" value="widowed">Widowed
+            <input type="radio" name="Civil status" value="widowed">Widowed
             <br>
         </label>
         <fieldset>
@@ -98,15 +83,36 @@
         </fieldset>
         
         <fieldset>
-           <h2>Music</h2>
-           <p>You like</p>
-           <p><input type="checkbox" name="music" value="rok"> Rok</p>
-           <p><input type="checkbox" name="music" value="pop" > Pop</p>
-           <p><input type="checkbox" name="music" value="jazz" > Jazz</p>
-           <p><input type="checkbox" name="music" value="classical"> Classical</p>
-           <p><input type="checkbox" name="music" value="hip-hop"> Hip-Hop</p>
-           <p><input type="checkbox" name="music" value="alternative"> Alternative</p>
-           <p><input type="checkbox" name="music" value="folk"> Folk</p>
+            <h2>Music</h2>
+            You like
+            <br>
+            <label>
+                <input type="checkbox" name="music" value="rok"> Rok
+            </label>
+            <br>
+            <label >
+                <input type="checkbox" name="music" value="pop" > Pop
+            </label >
+            <br>
+            <label >
+               <input type="checkbox" name="music" value="jazz" > Jazz
+            </label >
+            <br>
+            <label >
+               <input type="checkbox" name="music" value="classical"> Classical
+            </label >
+            <br>
+            <label >
+               <input type="checkbox" name="music" value="hip-hop"> Hip-Hop
+            </label >
+            <br>
+            <label >
+               <input type="checkbox" name="music" value="alternative"> Alternative
+            </label > 
+            <br>
+            <label >
+               <input type="checkbox" name="music" value="folk"> Folk
+            </label>
        </fieldset>
        <br>
         <h2>Select your favorite color:</h2>
@@ -117,6 +123,6 @@
         <br>
         
     </form>
-    <h3><a href="index2.html">My table -></a><h3>
+    <a href="index2.html">My table -></a>
 </body>
 </html>
